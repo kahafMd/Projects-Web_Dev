@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Baloo+Paaji+2&family=Ubuntu:wght@300&display=swap');
+html,body{
+    background: linear-gradient(to right, rgb(23, 79, 63), rgb(150, 39, 91));
+    height: 100%;
+    width:100%;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.container{
+    /* border:2px solid black ; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width:100%; */
+    margin: auto;
+}
+
+.row{
+    /* border:2px solid green; */
+    margin:6px 0px;
+}
+
+.row input{
+    /* margin:3px 0px; */
+    padding: 4px 25px;
+    border-radius: 5px;
+    /* width:17vw; */
+    font-size: 18px;
+}
+
+.button{
+    margin:0px 2px;
+    padding:20px;
+    width: 55px;
+    background-color:rgb(172, 195, 227)/* rgb(176, 216, 216)*/;
+    border:2px solid black;
+    border-radius: 14px;
+    cursor:pointer;
+    box-shadow: inset 2px 2px 9px 5px rgb(34, 75, 107) ;
+    
+}
+.button:hover{
+    transform: scale(1.1);
+}
+
+
+/* Utility */
+.text-center{
+    text-align: center;
+}
