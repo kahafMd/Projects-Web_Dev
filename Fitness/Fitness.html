@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness24x7</title>
+    <link
+        href="<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Raleway:wght@100&family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* background-color: aqua; */
+            background: url('fitness1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center center;
+            color: white;
+            font-family:'Ubuntu Mono', monospace;
+            height: 50vw;
+
+        }
+
+            
+        
+        /* img{
+            height:56px;
+            width:777px;
+
+        } */
+
+
+        
+
+        .left {
+            background-color: black;
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 28px;
+            left: 30px;
+        }
+
+
+
+        .mid {
+            /* background-color: rgb(58, 56, 56);
+            color: white;
+            border-radius: 15px; */
+            /* border: 4px solid rgb(180, 25, 25); */
+            display: block;
+            width: 750px;
+            margin: 28px auto;
+            font-size: 25px;
+            font-weight: bold;
+        
+           
+        }
+        
+        
+        
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 24px;
+            top: 28px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            
+            
+        }
+        
+        .navbar li a {
+            color: white;
+            margin: 17px 10px;
+            padding: 10px 11px;
+            text-decoration: none;
+            font-size: 21px;
+            
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+
+            text-decoration: underline;
+            color: rgb(99, 97, 97)
+            ;
+        }
+
+        .left img {
+
+            filter: invert(100%);
+            width: 85px;
+            height: 35px;
+
+        }
+
+        .left div {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin: 4px 4px;
+            Padding: 1px 12px;
+            color: white;
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 13.5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(78, 77, 77);
+
+        }
+
+        .container {
+            border: 2px solid #0b3133c2;
+            margin: 100px 70px;
+            padding: 10px 0px;
+            width: 400px;
+            border-radius: 10px;
+        }
+
+        .formgroup input {
+            font-size: 17px;
+            font-weight: bolder;
+            font-family: 'Raleway', sans-serif;
+            color: black;
+            text-align: center;
+            display: block;
+            width: 154px;
+            border: 2px solid black;
+            border-radius: 11px;
+            margin: 6px auto;
+            padding: 2px 100px;
+
+        }
+
+       .container h2 {
+            text-align: center;
+            font-style:oblique;
+            font-weight: bold;
+            font-size: 30px;
+            margin:20px;
+        }
+
+        .container button {
+            margin:25px auto;
+            display: block;
+            padding:4px 80px;
+            border: 2px solid white;
+            border-radius: 9px;
+            
+        }
+        .quote{
+            display:inline-block;
+            border:4px solid #0b3133c2;
+            background-color: black;
+            position:absolute;
+            right: 200px;
+            top: 160px;
+            width:260px;
+            margin: 50px 16px;   
+            padding:23px 23px; 
+            border-radius: 54px;
+            
+        }
+        
+        .quote p{
+            
+            font-size: 36px;
+            font-weight: bold;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="dumbbell-clipart-etsy-3.jpg" alt="">
+            <div>Fitness24x7</div>
+
+        </div>
+
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Trainer</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h2>Join Us Now</h2>
+        <form action="form.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Weight">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Contact">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+<div class="quote">
+<p>"Step Up Your Fitness Challenge With Us"</p>
+
+</div>
+</body>
+
+</html>
