@@ -1,32 +1,122 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Baloo+Paaji+2&family=Ubuntu:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+
+}
 html,body{
-    background: linear-gradient(to right, rgb(23, 79, 63), rgb(150, 39, 91));
-    height: 100%;
-    width:100%;
+    background:linear-gradient(to right, rgba(255,0,0,0), rgb(46, 155, 151))no-repeat;
+    height: 100vh;
+    width:100vw;
     font-family: 'Roboto', sans-serif;
 
 
 }
 
+                    /* ---------------Dark Mode CSS------------------------ */
+
+
+.dark .container{
+    background-color: rgb(13, 12, 12);
+    
+}
+
+.dark .button{
+    background-color: rgb(38, 36, 36);
+    color:rgb(184, 172, 172);
+}
+
+.checkbox{
+    opacity: 0;
+    position:absolute;
+    border:3px solid  black;
+    height: 20px;
+    width:20px;
+
+  }
+
+  
+  .label{
+      position: absolute;
+      top:20px;
+      left:1290px;
+      background-color:black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height:26px;
+      width: 50px;
+      padding: 6px;
+      border-radius: 50px;
+      
+  }
+
+  .label:hover{
+      cursor: pointer;
+  }
+  .fa-moon {
+      color: rgb(163, 154, 154);
+      /* font-size: 34px; */
+  }
+
+  .fa-sun{
+      color: yellow;
+  }
+
+  .ball{
+      position: absolute;
+      width:21px;
+      height: 21px;
+      background-color: white;
+      border-radius: 40px;
+      transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+      
+      transform: translateX(20px);
+  
+  
+  }
+
+  /*--------------------- NORMAL CSS --------------------*/
+
+  h1{
+      position: relative;
+      top:30px;
+      font-size: 40px;
+      text-align: center;
+      font-family:'Times New Roman', Times, serif;
+  }
+
+
 .container{
-    /* border:2px solid black ; */
+    position: relative;
+    top:70px;
+    border:2px solid black ;
+    border-radius: 9px;
+    background-color:cornsilk;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    /* width:100%; */
+    width: 22vw;
     margin: auto;
 }
 
 .row{
     /* border:2px solid green; */
-    margin:6px 0px;
+    margin: 6px 0px;
+    color: black;
 }
 
 .row input{
-    /* margin:3px 0px; */
-    padding: 4px 25px;
+    border: 2px solid black;
+    color: black;
+    margin: 13px;
+    padding: 6px 28px;
     border-radius: 5px;
     /* width:17vw; */
     font-size: 18px;
@@ -36,11 +126,11 @@ html,body{
     margin:0px 2px;
     padding:20px;
     width: 55px;
-    background-color:rgb(172, 195, 227)/* rgb(176, 216, 216)*/;
+    background-color:rgb(176, 189, 209)/* rgb(176, 216, 216)*/;
     border:2px solid black;
     border-radius: 14px;
     cursor:pointer;
-    box-shadow: inset 2px 2px 9px 5px rgb(34, 75, 107) ;
+    /* box-shadow: inset 2px 2px 9px 5px rgb(34, 75, 107) ; */
     
 }
 .button:hover{
@@ -48,7 +138,70 @@ html,body{
 }
 
 
-/* Utility */
-.text-center{
-    text-align: center;
+/*------------------- IPAD CSS -----------------------*/
+
+
+@media screen and (max-width: 850px) and (min-width: 750px) {
+
+
+    h1{
+        position: relative;
+        top:30px;
+        font-size: 34px;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+    }
+
+
+    .label{
+    position: absolute;
+    left:750px;
+}
+
+
+.container{
+    width:34vw;
+    top: 80px; 
+}
+
+.button{
+    font-size: 11px;
+    margin:0px 1px;
+    padding: 12px;
+}
+
+.row input{ 
+    padding:4px 17px;
+    
+}
+
+}
+
+/*---------------------------------------------- PHONE CSS --------------------------------- */
+
+@media screen and (max-width: 450px) {
+
+    .label{
+        position: relative;
+        top:10px;
+        left: 300px;
+    }
+    
+    
+    .container{
+        width:70vw;
+        top: 90px; 
+    }
+    
+    .button{
+        font-size: 11px;
+        margin:0px 1px;
+        padding: 12px;
+    }
+    
+    .row input{ 
+        padding:4px 17px;
+        
+    }
+
 }
